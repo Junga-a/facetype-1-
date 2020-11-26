@@ -1,218 +1,244 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>얼굴유형 테스트</title>
-    <meta name="title" content="얼굴유형 테스트">
-    <meta name="subject" content="얼굴로 보는 인공지능 얼굴유형 테스트, 나의 얼굴유형을 찾아보세요!">
-    <meta name="keywords" content="동물상 테스트, 인공지능 얼굴유형 테스트, 얼굴상, 얼굴상 테스트, 얼굴유형, 얼굴유형 찾기, 얼굴유형 테스트, facetype, 테낮에높, 테에높에높,테에낮에높,테높에낮,테에낮테높,테에높테높,인공지능 얼굴유형, AI 얼굴유형, AI 얼굴">
-    <meta name="author" content="주정코딩">
-    <link rel="stylesheet" href="style.css">
-    <link rel="canonical" href="www.facetype.tk" />
-    <meta property="og:url" content="www.facetype.tk" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="얼굴유형 테스트" />
-    <meta property="og:description" content="얼굴로 보는 인공지능 얼굴유형 테스트, 나의 얼굴유형을 찾아보세요! 유형별 대표 연예인 사진 데이터로 학습한 인공지능이 나의 얼굴로 동물상과 특징을 찾아드립니다. 회원가입도 필요없이 화면에서 바로 확인해보세요! 사진 데이터는 그 어디에도 전송되지 않습니다. 인공지능이 보는 나의 동물상 테스트 한번 해보세요!"
-    />
-    <meta property="og:image" scr="ogimage.jpeg" />
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <title>얼굴유형 테스트</title>
+      <meta name="title" content="얼굴유형 테스트">
+      <meta name="subject" content="얼굴로 보는 인공지능 얼굴유형 테스트, 나의 얼굴유형을 찾아보세요!">
+      <meta name="keywords" content="동물상 테스트, 인공지능 얼굴유형 테스트, 얼굴상, 얼굴상 테스트, 얼굴유형, 얼굴유형 찾기, 얼굴유형 테스트, facetype, 테낮에높, 테에높에높,테에낮에높,테높에낮,테에낮테높,테에높테높,인공지능 얼굴유형, AI 얼굴유형, AI 얼굴">
+      <meta name="author" content="주정코딩">
+      <link rel="stylesheet" href="style.css">
+      <link rel="canonical" href="www.facetype.tk" />
+      <meta property="og:url" content="www.facetype.tk" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="얼굴유형 테스트" />
+      <meta property="og:description" content="얼굴로 보는 인공지능 얼굴유형 테스트, 나의 얼굴유형을 찾아보세요! 유형별 대표 연예인 사진 데이터로 학습한 인공지능이 나의 얼굴로 동물상과 특징을 찾아드립니다. 회원가입도 필요없이 화면에서 바로 확인해보세요! 사진 데이터는 그 어디에도 전송되지 않습니다. 인공지능이 보는 나의 동물상 테스트 한번 해보세요!"
+      />
+      <meta property="og:image" scr="ogimage.jpeg" />
 
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e64b3727e862b06"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145482737-6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e64b3727e862b06"></script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145482737-6"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-145482737-6');
-    </script>
+          function gtag() {
+              dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'UA-145482737-6');
+      </script>
+
+
 </head>
 
-<body>
-    <nav class="p-3 container navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="www.facetype.tk">얼굴유형 테스트</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">얼굴유형 테스트
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item active" onclick="gtag('event', '조코딩 유튜브 클릭', {'event_category': '조코딩 유튜브 클릭','event_label': '상단 메뉴'});">
-                    <a class="nav-link" id="yotube-top-link" href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg">조코딩 유튜브 채널</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <section class="section">
-        <h1 class="title">동물상 테스트</h1>
-        <h2 class="subtitle">얼굴로 보는 인공지능 동물상 테스트</h2>
-        <h2 class="sr-only">나는 어떤 동물과 닮았을까? 나의 동물상 찾기를 해보세요!</h2>
-        <h3 class="sr-only">대표 동물상 연예인 사진 데이터로 학습한 인공지능이 나의 얼굴로 동물상과 특징을 찾아드립니다.</h3>
-        <h4 class="sr-only">본 서비스는 Google의 인공지능 teachable machine 2.0을 활용하였습니다.</h4>
-        <p class="sr-only">얼굴로 보는 인공지능 동물상 테스트, 나와 닮은 동물상을 찾아보세요! 대표 동물상 연예인 사진 데이터로 학습한 인공지능이 나의 얼굴로 동물상과 특징을 찾아드립니다. 회원가입도 필요없이 화면에서 바로 확인해보세요! 사진 데이터는 그 어디에도 전송되지 않습니다. 인공지능이 보는 나의 동물상 테스트 한번 해보세요! 강아지상? 고양이상? 여우상? 사슴상? 토끼상? 곰상? 공룡상? 얼굴상 테스트를 통해 나와 닮은 동물 찾기를 할 수 있습니다.</p>
-    </section>
-    <section class="youtube pb-3" id="yotube-mid-link">
-        <div class="container mt-3 youtube-cover d-flex flex-row-reverse align-items-center" onclick="gtag('event', '조코딩 유튜브 클릭', {'event_category': '조코딩 유튜브 클릭','event_label': '화면 중간'});">
-            <img src="img/youtube-copy.jpg" alt="youtube-icon" class="youtube-icon">
-            <a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg" class="youtube-link">By 조코딩 유튜브 채널</a>
-        </div>
-    </section>
-    <h3 class="pb-2 d-flex justify-content-center">성별을 선택하세요</h3>
-    <section class="d-flex justify-content-center">
-        <p class="d-flex align-items-center pr-3">여자</p>
-        <div>
-            <input type="checkbox" id="gender">
-            <label for="gender">
-                <span class="knob">
-                    <i></i>
-                </span>
-            </label>
-        </div>
-        <p class="d-flex align-items-center pl-3">남자</p>
-    </section>
-    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <div class="mt-3 container file-upload">
-        <div class="image-upload-wrap">
-            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
-            <div class="drag-text">
-                <img src="img/upload.svg" class="mt-5 pt-5 upload">
-                <h3 class="mb-5 pb-5 pt-4  upload-text">얼굴 사진을 올려놓거나 눌러서 업로드하세요!</h3>
-            </div>
-        </div>
-        <div class="file-upload-content">
-            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
-            <div id="loading" class="animated bounce">
-                <div class="spinner-border" role="status">
-                    <span class="sr-only">Loading...</span>
-                </div>
-                <p class="text-center">AI가 당신의 동물상을 분석중입니다.</p>
-            </div>
-            <p class="result-message"></p>
-            <div id="label-container" class="d-flex flex-column justify-content-around"></div>
-            <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light nav-distance">
+            <a class="navbar-brand" href="#">내 얼굴 유형 측정하기</a>
 
-            <div class="pt-3 image-title-wrap">
-                <button type="button p-2" class="try-again-btn" onclick="gaReload1();" data-toggle="modal" data-target="#adModal">
-                    <span class="try-again-text">다른 사진으로 재시도</span>
-                </button>
+
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">얼굴유형 테스트 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input
+                        class="form-control mr-sm-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                    />
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                        Search
+                    </button>
+                </form>
             </div>
+        </nav>
+
+
+
+       <section class="section">
+           <h1 class="title">인공지능 얼굴유형 테스트(남자)</h1>
+           <h2 class="subtitle">궁합으로 보는 나의 얼굴 유형은?</h2>
+       </section>
+       <h3 class="pb-2 d-flex justify-content-center">성별을 선택하세요</h3>
+<section class="d-flex justify-content-center">
+    <p class="d-flex align-items-center pr-3">여자</p>
+    <div>
+        <input type="checkbox" id="gender">
+        <label for="gender">
+            <span class="knob">
+                <i></i>
+            </span>
+        </label>
+    </div>
+    <p class="d-flex align-items-center pl-3">남자</p>
+</section>
+<script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<div class="mt-3 container file-upload">
+    <div class="image-upload-wrap">
+        <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+        <div class="drag-text">
+            <img src="uploadimg.jpg" class="mt-5 pt-5 upload">
+            <h3 class="mb-5 pb-5 pt-4  upload-text">얼굴 사진을 올려놓거나 눌러서 업로드하세요!</h3>
         </div>
     </div>
-    <!-- <div id="coupang" class="container d-flex justify-content-center">
-        <script src="https://ads-partners.coupang.com/g.js"></script>
-        <script>
-            new PartnersCoupang.G({
-                "id": 141621,
-                "subId": null
-            });
-        </script>
-    </div> -->
-    <div class="mt-2 container d-flex justify-content-center ad-banner">
-        <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-1ibeto5pa83fn" data-ad-width="320" data-ad-height="100"></ins>
+    <div class="file-upload-content">
+        <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+        <div id="loading" class="animated bounce">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <p class="text-center">AI가 당신의 동물상을 분석중입니다.</p>
+        </div>
+        <p class="result-message"></p>
+        <div id="label-container" class="d-flex flex-column justify-content-around"></div>
+        <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
+
+        <div class="pt-3 image-title-wrap">
+            <button type="button p-2" class="try-again-btn" onclick="gaReload1();" data-toggle="modal" data-target="#adModal">
+                <span class="try-again-text">다른 사진으로 재시도</span>
+            </button>
+        </div>
     </div>
-    <div class="mt-2 container d-flex justify-content-center ad-banner">
-        <ins class="kakao_ad_area" style="display:none;"
-     data-ad-unit    = "DAN-1jefy9znk6ibb"
-     data-ad-width   = "300"
-     data-ad-height  = "250"></ins>
-    </div>
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-    <section id="yotube-bottom-link" class="mt-2 d-flex flex-column justify-content-center align-items-center" onclick="gtag('event', '조코딩 유튜브 클릭', {'event_category': '조코딩 유튜브 클릭','event_label': '하단 광고'});">
-        <!-- <a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg" class="d-flex flex-column justify-content-center align-items-center">
-            <img class="ad-banner"src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FdHfMHS%2FbtqDfCJdLpH%2F6xKAC0w10kTrGjhll02SOK%2Fimg.jpg" alt="조코딩 유튜브 홍보"/>
-            <span>이런 앱을 직접 만들어보고 싶지 않으신가요? 조코딩 채널을 구독해보세요!</span>
-        </a> -->
-        <iframe width="320" height="180" src="https://www.youtube.com/embed/s6SITKSN9Q0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h4 class="mt-1">이런 앱 만들면 얼마 벌까? 충격적인 수익 공개합니다</h4>
-    </section>
-    <div class="container pt-3">
+</div>
+
+
+
+
+        <script
+            class="jsbin"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+        ></script>
+        <div class="container file-upload">
+
+            </button>
+
+
+
+                <P class="result-title"></p>
+                <P class="result-explain"></p>
+                <P class="result-celeb"></p>
+
+
+
+                <div id="label-container"></div>
+
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox"></div>
+
+                <div class="image-title-wrap">
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container pt-3">
         <div id="disqus_thread"></div>
     </div>
-    <footer class="footer pt-5 container d-flex justify-content-center">
-        <div>
-            <p>&copy; 조코딩 JoCoding 2020. All Rights Reserved. </p>
-<!--
-        <ul class="list-inline d-flex justify-content-center">
-            <li class="list-inline-item">
-                <a href="https://developerdk.tistory.com/46">Privacy</a>
-            </li>
-            <li class="list-inline-item">
-                <a href="https://developerdk.tistory.com/47">Terms</a>
-            </li>
-            <li class="list-inline-item">
-                <a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg">FAQ</a>
-            </li>
-        </ul>
--->
-        </div>
-    </footer>
-    <!-- Modal -->
-    <div class="modal fade" id="adModal" tabindex="-1" role="dialog" aria-labelledby="adModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="adModalLabel">(AD)광고 - 재시도를 한번 더 눌러주세요.</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body d-flex justify-content-center">
-                    <ins class="kakao_ad_area" style="display:none;"
- data-ad-unit    = "DAN-t89oh3sc0ew5"
- data-ad-width   = "300"
- data-ad-height  = "250"></ins>
-                </div>
-                <div class="modal-footer d-flex justify-content-center">
-                    <button type="button p-2" class="try-again-btn" onclick="gaReload2();">
-                        <span class="try-again-text">다른 사진으로 재시도</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-        function gaReload1() {
-            gtag('event', '다른 사진으로 재시도 1차', {
-                'event_category': '다른 사진으로 재시도'
-            });
-        }
-        function gaReload2() {
-            gtag('event', '다른 사진으로 재시도 2차', {
-                'event_category': '다른 사진으로 재시도'
-            });
-            window.location.reload();
-        }
-    </script>
-    <script>
-        (function() {
-        var d = document,
-            s = d.createElement('script');
-        s.src = 'https://jocoding.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the
-        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-    </noscript>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
-    <script>
+
+        <div id="webcam-container"></div>
+        <h5 class="emailadd d-flex flex-row-reverse">  goqkrtl97@naver.com</h3>
+        <h6 class="refer d-flex flex-row-reverse"><a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg"><u>조코딩 유튜브 채널 참조</u></a></h4>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+        <div class="modal fade" id="adModal" tabindex="-1" role="dialog" aria-labelledby="adModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="adModalLabel">(AD)광고 - 재시도를 한번 더 눌러주세요.</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body d-flex justify-content-center">
+                      <ins class="kakao_ad_area" style="display:none;"
+   data-ad-unit    = "DAN-t89oh3sc0ew5"
+   data-ad-width   = "300"
+   data-ad-height  = "250"></ins>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                      <button type="button p-2" class="try-again-btn" onclick="gaReload2();">
+                          <span class="try-again-text">다른 사진으로 재시도</span>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <script>
+      function gaReload1() {
+          gtag('event', '다른 사진으로 재시도 1차', {
+              'event_category': '다른 사진으로 재시도'
+          });
+      }
+      function gaReload2() {
+          gtag('event', '다른 사진으로 재시도 2차', {
+              'event_category': '다른 사진으로 재시도'
+          });
+          window.location.reload();
+      }
+  </script>
+
+
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+        <script>
         function readURL(input) {
             if (input.files && input.files[0]) {
                 var reader = new FileReader();
@@ -246,10 +272,12 @@
             $('.image-upload-wrap').removeClass('image-dropping');
         });
     </script>
-    <script type="text/javascript">
+
+
+        <script type="text/javascript">
         let URL;
-        const urlMale = "https://teachablemachine.withgoogle.com/models/o9D1N5TN/";
-        const urlFemale = "https://teachablemachine.withgoogle.com/models/bB3YHn5r/";
+        const urlMale = "https://teachablemachine.withgoogle.com/models/oHOwjYkFb/";
+        const urlFemale = "https://teachablemachine.withgoogle.com/models/Je8RrCtmm/";
         let model, webcam, labelContainer, maxPredictions;
         async function init() {
             if (document.getElementById("gender").checked) {
@@ -268,178 +296,210 @@
                 labelContainer.appendChild(element);
             }
         }
-        async function predict() {
-            var image = document.getElementById("face-image")
-            const prediction = await model.predict(image, false);
-            prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
-            console.log(prediction[0].className);
-            var resultTitle, resultExplain, resultCeleb;
-            if (document.getElementById("gender").checked) {
-                gtag('event', '동물상 테스트 수행', {
-                    'event_category': '동물상 테스트 수행',
-                    'event_label': '남자'
-                });
-                switch (prediction[0].className) {
-                    case "dog":
-                        resultTitle = "귀여운 순둥이 강아지상"
-                        resultExplain = "다정다감하고 귀여운 당신은 모든 사람들에게 즐거움을 주는 호감형이다! 친절하고 활발한 성격으로 어디에서도 인기폭발이며 애교와 웃음이 많아 연인에게 특히나 사랑스럽다. 당신은 애인바라기로 애인의 관심이 부족하면 시무룩해지고 외로움을 타는 모습이 마치 강아지와 똑 닮았다!"
-                        resultCeleb = "강아지상 연예인: 강다니엘, 백현(엑소), 박보검, 송중기"
-                        gtag('event', '남자 결과 강아지상', {'event_category': '남자 결과'});
-                        break;
-                    case "cat":
-                        resultTitle = "츤데레 매력쟁이 고양이상"
-                        resultExplain = "무뚝뚝한 당신의 첫인상은 차가워 보이지만 묘한 매력을 풍겨 언제나 인기가 넘친다. 자존심이 세계 1등과 맞먹지만 관심 받는 것을 좋아하고 연인에게는 은근히 애교쟁이다. 시크한 츤데레로 연인에게 끊임없이 설렘을 안겨주는 당신은 고양이와 닮았다!"
-                        resultCeleb = "고양이상 연예인: 황민현(뉴이스트), 시우민(엑소), 강동원, 이종석, 이준기"
-                        gtag('event', '남자 결과 고양이상', {'event_category': '남자 결과'});
-                        break;
-                    case "rabbit":
-                        resultTitle = "천진난만한 매력의 토끼상"
-                        resultExplain = "천진난만하고 귀여운 당신은 주변 사람들에게 기쁨을 주는 행복바이러스다! 호기심이 많아 활발하며 귀엽고 순수한 외모로 연인의 보호본능을 자극한다. 존재 자체가 상큼한 당신은 특별한 애교 없이도 연인에게 너무나도 사랑스럽다!"
-                        resultCeleb = "토끼상 연예인: 정국(방탄소년단), 바비(아이콘), 박지훈(워너원), 수호(엑소)"
-                        gtag('event', '남자 결과 토끼상', {'event_category': '남자 결과'});
-                        break;
-                    case "dinosaur":
-                        resultTitle = "따뜻한 나쁜남자 공룡상"
-                        resultExplain = "무심한 성격에 첫인상은 나쁜 남자 같지만, 알고 보면 따뜻함이 묻어나는 당신! 시크한 매력에 선뜻 다가가지 못하지만 한번 다가가면 헤어나올 수 없는 터프한 매력을 가진 카리스마 있는 남자다."
-                        resultCeleb = "공룡상 연예인: 윤두준(하이라이트), 이민기, 김우빈, 육성재(비투비), 공유"
-                        gtag('event', '남자 결과 공룡상', {'event_category': '남자 결과'});
-                        break;
-                    case "bear":
-                        resultTitle = "포근한 매력의 곰상"
-                        resultExplain = "첫 인상은 무서워 보이지만 알고 보면 귀여운 매력의 당신! 꼼꼼하고 섬세한 성격으로 연인을 헌신적으로 챙겨주는 당신은 연인에게 듬직한 존재! 포근한 매력에 듬직함까지 갖춘 최고의 남자다!"
-                        resultCeleb = "곰상 연예인: 마동석, 조진웅, 조세호, 안재홍"
-                        gtag('event', '남자 결과 곰상', {'event_category': '남자 결과'});
-                        break;
-                    default:
-                        resultTitle = "알수없음"
-                        resultExplain = ""
-                        resultCeleb = ""
-                        gtag('event', '남자 결과 알수없음', {'event_category': '남자 결과'});
+
+
+            // async function init() {
+            //     const modelURL = URL + 'model.json';
+            //     const metadataURL = URL + 'metadata.json';
+            //
+            //     // load the model and metadata
+            //     // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+            //     // or files from your local hard drive
+            //     // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+            //     model = await tmImage.load(modelURL, metadataURL);
+            //     maxPredictions = model.getTotalClasses();
+            //
+            //     // append elements to the DOM
+            //     labelContainer = document.getElementById('label-container');
+            //   for (let i = 0; i < maxPredictions; i++) {
+            //       // and class labels
+            //       labelContainer.appendChild(document.createElement('div'));
+            //   }
+
+// }
+            // run the webcam image through the image model
+            async function predict() {
+                // predict can take in an image, video or canvas html element
+                var image = document.getElementById("face-image")
+          const prediction = await model.predict(image, false);
+          prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+          console.log(prediction[0].className);
+          var resultTitle, resultExplain, resultCeleb;
+          if (document.getElementById("gender").checked) {
+              gtag('event', '동물상 테스트 수행', {
+                  'event_category': '동물상 테스트 수행',
+                  'event_label': '남자'
+              });
+                switch(prediction[0].className){
+                  case "te-low-e-high":
+                  resultTitle ="당신은 테낮에높 유형"
+                  resultExplain ="성격이 부드럽고, 수줍음을 많이 타고, 세심하고, 동정심이 많다. 다른 사람에게 싫은 소리를 못한다. 갈등이 많아서 속마음을 쉽게 결정을 못한다. 감정적이어서 다른 사람이 좋아해주면 좋아하지만 조금이라도 싫어하는 것 같은 느낌이 들면 싫어진다. <br><br> 이 유형은 섬세한 일을 여자보다 더 잘한다. 음식을 하면 맛있다. 어릴 때부터 손재주가 있다는 이야기를 많이 듣는다. 여사친이 많은 전형적인 스타일이다. 연예상담의 고수라고도 불린다. "
+                  resultCeleb ="테낮에높 유형 연예인: 신혜성, 양요섭, 동호, 인피니트 성종"
+                  break;
+
+                  case "te-e-high-e-high":
+                  resultTitle ="당신은 테에높에높 유형"
+                  resultExplain ="상황에 따라서 남성스럽게 느껴지기도 하고 여성스럽게 느껴지기도 한다. 그래서 남성스러운 캐릭터와 여성스러운 캐릭터를 모두 훌륭하게 연기하는 남자 연예인 중에 이 유형이 많다. <br><br>다른 사람에게 동조를 잘 한다. 이 사람이 이 말하면 옳다 하고 저 사람이 저 말해도 옳다 한다. 그런 점에서 황희정승 스타일이다. 가끔 주관이 없어 보이지만 다른 사람의 의견에 쉽게 동조해주는 것이 이 유형의 가장 큰 매력이다.<br><br>남성의 여섯 가지 유형 중에서 여성들에게 가장 인기가 많다. 겉모습이 부드럽다. 특히 닉쿤이 유형의 사람들은 다른 사람에게 말을 걸기 전에 먼저 웃는다. 상대방에게 좋은 인상을 주고 싶은 마음이 강하기 때문이다."
+                  resultCeleb ="테에높에높 유형 연예인: 닉쿤, 육성재, 장근석, 정용화"
+                  break;
+
+                  case "te-e-low-e-high":
+                  resultTitle ="당신은 테에낮에높 유형"
+                  resultExplain ="인상이 좋다. 동안이다. 생긴 대로 어린아이처럼 천진난만한 면이 있다. 어린 아이는 남녀노소가 모두 거부감이 별로 없다. 그래서 남녀노소에게 인기가 있다. 행동도 역시 어린아이 같은 면이 있어서 나이가 들어도 가끔 귀엽다는 생각이 드는 경우가 있다. <br><br>진지하게 고민하거나 심각하게 생각하는 것을 별로 좋아하지 않는다. 격식에 구애받는 것을 싫어하고 자유롭게 행동하고 싶어 한다."
+                  resultCeleb ="테에높에낮 유형 연예인: 김국진, 리키, 박성광, 산들"
+                  break;
+
+                  case "te-e-low-te-high":
+                  resultTitle ="당신은 테에낮테높 유형"
+                  resultExplain ="목표지향적이다. 자신이 이루려는 목표와 관련된 일이 아니면 귀찮아한다. 짜증을 잘 낸다. 성격이 급해서 참고 기다리는 것을 잘 못한다. 성격이 강하지만 테높에낮 유형처럼 극강하지는 않다. 처음에는 강하게 나가지만 나중에는 부드러워진다. 가끔 극단적인 말을 하지만 실제로 행동으로 옮길 정도로 무모하지는 않다. 만약 실제로 행동으로 옮긴다면 테높에낮 유형으로 봐야 한다. <br><br>모든 일을 즉흥적으로 처리하는 경향이 있는데 좀 더 주도면밀하면 성공에 한 걸음 더 나아갈 수 있다. 하지만 김태원 같은 경우 즉흥적인 영감이 훌륭한 작품으로 탄생하기도 한다. 역시 무조건 좋고 무조건 나쁜 것은 없는 듯하다."
+                  resultCeleb ="테에낮테높 유형 연예인: 유세윤, 유권, 박명수, 김태원"
+                  break;
+
+                  case "te-high-e-low":
+                  resultTitle ="당신은 테높에낮 유형"
+                  resultExplain ="경쟁심이 강해서 지고는 못 산다. 임전무퇴의 정신이 강하다. 물러서면 지는 것으로 생각할 정도로 공격성이 강하고 호전적이다. <br><br>정치ㆍ경제의 수장들 중에도 이 유형이 많다. 위의 사진에는 없지만 이건희 회장, 이명박 대통령도 이 유형에 속한다. 서열관계로 세상을 파악한다. 수평관계에 대한 인식이 약하다. 감정 표현이 직설적이고 상대방을 배려하는 것보다 자신의 뜻을 이루는 것이 중요하다고 생각한다. 영웅심리가 있어서 뭔가 영웅적인 행동을 하고 싶어 한다."
+                  resultCeleb ="테높에낮 유형 연예인: 옥택연, 추성훈, 차인표, 빅뱅 탑"
+                  break;
+
+                  case "te-e-high-te-high":
+                  resultTitle ="당신은 테에높테높 유형"
+                  resultExplain ="겉모습을 보면 강하고 무뚝뚝할 것 같지만 실제로 대화를 나눠보면 의외의 부드러움이 감동을 준다. 목소리가 크고 말이 많다. 어딜 가든 분위기를 주도한다. 공명심이 있어서 감투 쓰기를 좋아하고 무리의 우두머리가 되고 싶어 한다. <br><br> 보편적으로 자수성가하는 사람들 중에 이 유형이 제일 많다. 분위기를 주도하는 사람은 상황을 자기가 유리한 방향으로 이끌어갈 수 있기 때문에 항상 이익을 얻는다. 얼마 전 강호동의 전격적인 은퇴 발표로 상황이 역전된 적이 있었다. 평소 분위기를 주도하는 강호동의 성격답게 먼저 주도권을 쟁취했다. 이것이 주도권을 놓지 않는 이들의 삶의 방식이다."
+                  resultCeleb ="테에높테높 유형 연예인:강호동, 김구라, 김준현, 최홍만"
+                  break;
+
+                  default:
+                  resultTitle="알수없음"
+                  resultExplain=""
+                  resultCeleb=""
                 }
-            } else {
-                gtag('event', '동물상 테스트 수행', {
-                    'event_category': '동물상 테스트 수행',
-                    'event_label': '여자'
-                });
-                switch (prediction[0].className) {
-                    case "dog":
-                        resultTitle = "귀여운 순둥이 강아지상"
-                        resultExplain = "다정다감하고 귀여운 당신은 모든 사람들에게 즐거움을 주는 호감형이다! 상냥하고 활발한 성격으로 어디에서도 인기폭발이지만, 애교와 웃음이 많아 연인에게 특히나 사랑스럽다. 당신은 애인바라기로 애인의 관심이 부족하면 시무룩해지고 외로움을 타는 모습이 마치 강아지와 똑 닮았다!"
-                        resultCeleb = "강아지상 연예인: 박보영, 아이유, 윤승아, 민아(걸스데이), 한지민"
-                        gtag('event', '여자 결과 강아지상', {'event_category': '여자 결과'});
-                        break;
-                    case "cat":
-                        resultTitle = "츤데레 매력쟁이 고양이상"
-                        resultExplain = "도도하고 섹시한 당신은 첫인상은 차가워 보이지만 묘한 매력을 풍겨 언제나 인기가 넘친다. 자존심이 세계 1등과 맞먹지만 관심 받는 것을 좋아하고 애인에게 관심이 받고 싶을 때는 애교도 부릴 줄 아는 귀여운 매력을 가졌다. 시크한 츤데레로 연인에게 끊임없이 설렘을 안겨주는 당신은 고양이와 닮았다!"
-                        resultCeleb = "고양이상 연예인: 안소희(원더걸스), 오연서, 한예슬, 이성경, 이효리"
-                        gtag('event', '여자 결과 고양이상', {'event_category': '여자 결과'});
-                        break;
-                    case "rabbit":
-                        resultTitle = "상큼발랄한 매력의 토끼상"
-                        resultExplain = "발랄하고 귀여운 당신은 주변 사람들에게 기쁨을 주는 행복바이러스다! 호기심이 많아 활발하며 귀엽고 순수한 외모로 연인의 보호본능을 자극한다. 존재 자체가 상큼하고 깜찍한 당신은 특별한 애교 없이도 연인에게 너무나도 사랑스럽다!"
-                        resultCeleb = "토끼상 연예인: 수지, 나연(트와이스), 예린(여자친구), 한승연(카라), 문채원"
-                        gtag('event', '여자 결과 토끼상', {'event_category': '여자 결과'});
-                        break;
-                    case "deer":
-                        resultTitle = "온순하고 우아한 사슴상"
-                        resultExplain = "맑고 영롱한 분위기의 당신은 사슴처럼 차분한 성격의 소유자다. 초롱초롱한 눈망울이 당신의 가장 큰 트레이드마크며 따스하고 온순한 눈빛을 가져 사랑스러움을 항상 머금고 있다! 부끄러움이 많아 애정표현이 낯설은 당신은 연인에게조차 신비한 존재지만 따뜻한 성격으로 연인의 마음을 사로잡는 능력을 가졌다."
-                        resultCeleb = "사슴상 연예인: 윤아(소녀시대), 이연희, 고아라, 문근영, 정유미(부산행 배우)"
-                        gtag('event', '여자 결과 사슴상', {'event_category': '여자 결과'});
-                        break;
-                    case "fox":
-                        resultTitle = "섹시한 밀당고수 여우상"
-                        resultExplain = "사람을 홀리는 매력을 가진 당신은 선뜻 다가가기 힘든 섹시한 매력을 가졌다. 우아한 외모에 더해 뛰어난 센스의 성격을 가진 당신은 어딜가도 주목받는 주인공이다! 사교적인 성격을 가져 연인에게도 적극적으로 애정표현을 하지만 밀당의 고수인 당신은 연인의 혼을 쏙 빼놓는 매력쟁이다."
-                        resultCeleb = "여우상 연예인: 경리(나인뮤지스), 예지(있지), 한혜진(모델), 헤이즈, 지연(티아라)"
-                        gtag('event', '여자 결과 여우상', {'event_category': '여자 결과'});
-                        break;
-                    default:
-                        resultTitle = "알수없음"
-                        resultExplain = ""
-                        resultCeleb = ""
-                        gtag('event', '여자 결과 알수없음', {'event_category': '여자 결과'});
-                }
-            }
-            var title = "<div class='" + prediction[0].className + "-animal-title'>" + resultTitle + "</div>"
-            var explain = "<div class='animal-explain pt-2'>" + resultExplain + "</div>"
-            var celeb = "<div class='" + prediction[0].className + "-animal-celeb pt-2 pb-2'>" + resultCeleb + "</div>"
-            $('.result-message').html(title + explain + celeb);
-            var barWidth;
-            for (let i = 0; i < maxPredictions; i++) {
-                if (prediction[i].probability.toFixed(2) > 0.1) {
-                    barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
-                } else if (prediction[i].probability.toFixed(2) >= 0.01) {
-                    barWidth = "4%"
-                } else {
-                    barWidth = "2%"
-                }
-                var labelTitle;
-                switch (prediction[i].className) {
-                    case "dog":
-                        labelTitle = "강아지상"
-                        break;
-                    case "cat":
-                        labelTitle = "고양이상"
-                        break;
-                    case "rabbit":
-                        labelTitle = "토끼상"
-                        break;
-                    case "dinosaur":
-                        labelTitle = "공룡상"
-                        break;
-                    case "bear":
-                        labelTitle = "곰상"
-                        break;
-                    case "deer":
-                        labelTitle = "사슴상"
-                        break;
-                    case "fox":
-                        labelTitle = "여우상"
-                        break;
-                    default:
-                        labelTitle = "알수없음"
-                }
-                var label = "<div class='animal-label d-flex align-items-center'>" + labelTitle + "</div>"
-                var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
-                labelContainer.childNodes[i].innerHTML = label + bar;
-            }
-        }
-    </script>
-    <script>
-        function iosApp() {
-            document.getElementById("coupang").style.display="none";
-            $("#coupang ins").hide();
-            document.getElementById("addThis").style.display="none";
-            document.getElementById("disqus_thread").style.display="none";
-            var kakao = document.getElementsByClassName("kakao_ad_area");
-            for (var i = 0; i < kakao.length; i++) {
-              if(kakao[i]) {
-                  kakao[i].style.display="none";
+              } else {
+              gtag('event', '동물상 테스트 수행', {
+                  'event_category': '동물상 테스트 수행',
+                  'event_label': '여자'
+              });
+              switch (prediction[0].className) {
+                case "te-low-e-high":
+                resultTitle ="당신은 테낮에높 유형"
+                resultExplain ="여성의 경우 피부가 부드러우면 마음 역시 부드러운 경우가 많다. 이 유형은 대부분 성격이 부드럽다.<br><br>내숭이 있다. 겉모습만 보면 얌전하고 순진할 것 같지만 아름다운 장미에는 가시가 있듯이 이 유형의 여성에게는 내숭이 있다.<br>겉모습이 매력적이고 완벽한 것 같지만 의외의 허점이 있다. 대단치 않은 남자에게 빠지기도 하고 자신의 일을 제대로 챙기지 못하기도 한다. "
+                resultCeleb ="테낮에높 유형 연예인: 송혜교 한지민 김태희  신세경"
+                break;
+
+                case "te-e-high-e-high":
+                resultTitle ="당신은 테에높에높 유형"
+                resultExplain ="겉모습은 여성스러운데 뜻밖의 털털한 성격이 반전이다. <br><br> 긍정적이고 개방적이면서도 상대방의 잘못에 대해서는 신랄하고 비판적이다.<br><br>애교가 많거나 귀여운 느낌을 주지는 않지만 기본적으로 상대방을 편안하게 해주고 허물없이 대한다."
+                resultCeleb ="테에높에높 유형 연예인: 이효리, 고소영, 박봄, 박신혜"
+                break;
+
+                case "te-e-low-e-high":
+                resultTitle ="당신은 테에낮에높 유형"
+                resultExplain ="얼굴이 동안이듯이 생각도 어린아이처럼 순수하고 장난을 좋아한다. 생각하는 방식 자체가 귀엽다.<br><br>의외의 당찬 말에 가끔 놀라지만 실제 모습은 소심하고 걱정이 많다. 작은 일에도 깜짝깜짝 잘 놀란다. 힘든 상황이 오면 맞서기보다 피하려고 한다.<br><br>의존성이 있어서 어떤 일이든 혼자 하는 것보다는 누군가가 함께 하고 싶어 한다."
+                resultCeleb ="테에낮에높 유형 연예인: 아이유, 장나라, 민아, 송지효"
+                break;
+
+                case "te-e-low-te-high":
+                resultTitle ="당신은 테에낮테높 유형"
+                resultExplain ="보기보다 대범하고 이해심이 넓다. 성격이 쿨 하다. 겉으로 얌전해 보이지만 의외로 당찬 면이 있어서 놀란다.<br> 이 유형은 웃는 표정이 조금 어색하거나 평소에도 무표정한 경우가 많다.<br><br>남에게 의지하지 않고 혼자 힘으로 뭐든지 해결하는 편이다. 이 유형은 자존심이 강하다. 다른 사람에게 조금이라도 아쉬운 소리를 못하고 도와달라는 말을 못한다. 세상 사람들은 말을 하지 않으면 다른 사람의 속마음 잘 모른다. 그런데 도와달라는 말은 못하고 도와주길 기다려야 하기 때문에 가슴앓이를 많이 한다."
+                resultCeleb ="테에낮테높 유형 연예인: 공효진, 공민지, 김서형, 천우희"
+                break;
+
+                case "te-high-e-low":
+                resultTitle ="당신은 테높에낮 유형"
+                resultExplain ="대범하고 이해심이 넓다. 성격이 쿨하다는 소리를 많이 듣는다.리더십이 있고 가정 살림보다 바깥 활동을 좋아한다. 스포츠를 좋아하고 그 방면으로 재능이 있다. 요리나 바느질을 잘 못한다.<br>경쟁심이 강해서 다른 사람보다 더 잘하기 위해서 노력을 많이 한다. 그러다 보니 몸과 마음이 힘들어진다.<br><br>패션 스타일은 치마를 잘 안 입고 바지를 즐겨 입는다. 헐렁한 티셔츠나 남방 스타일을 좋아하고 너 딱 붙는 옷은 답답해서 싫어한다."
+                resultCeleb ="테높에낮 유형 연예인: 엠버, 김혜선, 박경림, 조혜련"
+                break;
+
+                case "te-e-high-te-high":
+                resultTitle ="당신은 테에높테높 유형"
+                resultExplain ="쾌활하고 활달하면서도 모험심과 창의성이 있다. 모든 일에 적극적이고 의리가 있다. 예술 방면에 재능 있는 사람이 많다.<br><br>다른 사람의 마음을 상하게 할까봐 신경을 많이 쓴다. 보기보다 세심하고 감수성이 풍부하다.<br><br>평소에 억울하다고 자주 느낀다. 공명심이 강하고 자존심이 강하다. 그래서 다른 사람에게 호의를 베풀기를 좋아하는데 세상 사람들은 생각만큼 알아주지 않기 때문이다."
+                resultCeleb ="테에높테높 유형 연예인:박칼린, 한비야, 최정원, 이소라"
+                break;
+
+                default:
+                resultTitle="알수없음"
+                resultExplain=""
+                resultCeleb=""
+                gtag('event', '여자 결과 알수없음', {'event_category': '여자 결과'});
               }
             }
-            document.getElementById("yotube-top-link").style.display="none";
-            document.getElementById("yotube-mid-link").style.display="none";
-            document.getElementById("yotube-bottom-link").style.display="none";
-        }
-    </script>
-</body>
-<!--
-image input box
-Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+
+            var title = "<div class='" + prediction[0].className + "-face-title'>" + resultTitle + "</div>"
+                        var explain = "<div class='face-explain pt-2'>" + resultExplain + "</div>"
+                        var celeb = "<div class='" + prediction[0].className + "-face-celeb pt-2 pb-2'>" + resultCeleb + "</div>"
+                        $('.result-message').html(title + explain + celeb);
+                        var barWidth;
+                        for (let i = 0; i < maxPredictions; i++) {
+                            if (prediction[i].probability.toFixed(2) > 0.1) {
+                                barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
+                            } else if (prediction[i].probability.toFixed(2) >= 0.01) {
+                                barWidth = "4%"
+                            } else {
+                                barWidth = "2%"
+                            }
+                            var labelTitle;
+                            switch (prediction[i].className) {
+                                case "te-low-e-high":
+                                    labelTitle = "테낮에높 유형"
+                                    break;
+                                case "te-e-high-e-high":
+                                    labelTitle = "테에높에높 유형"
+                                    break;
+                                case "te-e-low-e-high":
+                                    labelTitle = "테낮에높 유형"
+                                    break;
+                                case "te-e-low-te-high":
+                                    labelTitle = "테에낮테높 유형"
+                                    break;
+                                case "te-high-e-low":
+                                    labelTitle = "테높에낮 유형"
+                                    break;
+                                case "te-e-high-te-high":
+                                    labelTitle = "테에높테높 유형"
+                                    break;
+                                default:
+                                    labelTitle = "알수없음"
+                            }
+                            var label = "<div class='face-label d-flex align-items-center'>" + labelTitle + "</div>"
+                            var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
+                            labelContainer.childNodes[i].innerHTML = label + bar;
+                        }
+                    }
+                </script>
+
+
+
+
+
+
+
+
+
+
+                  <!-- $('.result-title').html(resultTitle
+                  $('.result-explain').html(resultExplain);
+                  $('.result-celeb').html(resultCeleb);
+
+                for (let i = 0; i < maxPredictions; i++) {
+                    const classPrediction =
+                        prediction[i].className + ': ' + prediction[i].probability.toFixed(2);
+                    labelContainer.childNodes[i].innerHTML = classPrediction;
+                }
+            } -->
+        </script>
+    </body>
+    <Footer>
+      <div class="ad-banner">
+      <ins class="kakao_ad_area" style="display:none;"
+ data-ad-unit    = "DAN-WThOnVupM7AEO5wl"
+ data-ad-width   = "320"
+ data-ad-height  = "100"></ins>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+    </Footer>
+    <!--    Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-gender toggle
-Copyright (c) 2020 by Mert Cukuren (https://codepen.io/knyttneve/pen/bPpEZY)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- -->
-
-</html>
+--></html>
